@@ -1,0 +1,763 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kish Factory Portal - 1444 Factories Initiative</title>
+    <meta name="description" content="Kish Factory Portal showcasing 1444 factories across 12 industrial sectors in Kish Island, connecting to Dubai and global markets." />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <a href="#" class="logo-link">
+            <div class="logo-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 22h20M2 11h20M2 17h20M2 7h20M17 3v18M7 3v18" />
+              </svg>
+            </div>
+            <span class="logo-text">Kish Factory Portal</span>
+          </a>
+
+          <div class="menu-desktop">
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#sectors" class="menu-item">Sectors</a>
+            <a href="#facilities" class="menu-item">Facilities</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            <a href="#contact" class="btn btn-primary">Partner With Us</a>
+          </div>
+
+          <button class="menu-toggle" id="menuToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path id="menuIcon" d="M4 6h16M4 12h16M4 18h16" />
+              <path id="closeIcon" class="hidden" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu-content">
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#sectors" class="menu-item">Sectors</a>
+            <a href="#facilities" class="menu-item">Facilities</a>
+            <a href="#contact" class="menu-item">Contact</a>
+            <a href="#contact" class="btn btn-primary mt-2">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content animate-on-scroll">
+            <div class="badge">Transforming Global Trade</div>
+            <h1 class="hero-title">
+              <span class="text-gradient">1444</span> Factories in 
+              <span class="text-gradient">Kish Island</span>, Gateway to Global Markets
+            </h1>
+            <p class="hero-description">
+              From Kish to Dubai and beyond, we're creating a manufacturing hub that connects innovation with global distribution. Join us in building the future.
+            </p>
+            <div class="hero-buttons">
+              <a href="#sectors" class="btn btn-primary">Explore Industries</a>
+              <a href="#contact" class="btn btn-glass">Become a Partner</a>
+            </div>
+          </div>
+
+          <div class="hero-image-container animate-on-scroll">
+            <div class="hero-image">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1080&h=768&auto=format&fit=crop" 
+                   alt="Kish Factory Aerial View" 
+                   class="img-full">
+            </div>
+            
+            <div class="hero-card hero-card-bottom animate-float">
+              <div class="hero-card-content">
+                <div class="hero-card-title">3 Hour</div>
+                <div class="hero-card-subtitle">Shipping to Dubai</div>
+              </div>
+            </div>
+            
+            <div class="hero-card hero-card-top animate-float delay-1">
+              <div class="hero-card-content">
+                <div class="hero-card-title">200+</div>
+                <div class="hero-card-subtitle">Global Destinations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" /><path d="M17 17h1" /><path d="M12 17h1" /><path d="M7 17h1" />
+              </svg>
+            </div>
+            <div class="stat-number" data-count="1444">0</div>
+            <div class="stat-label">Factories</div>
+          </div>
+          
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12A10 10 0 0 0 12 2v10z" /><path d="M2 12A10 10 0 0 0 12 22V12Z" /><path d="M12 2a10 10 0 0 0 0 20" />
+              </svg>
+            </div>
+            <div class="stat-number" data-count="12">0</div>
+            <div class="stat-label">Industry Sectors</div>
+          </div>
+          
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" /><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z" /><path d="M2 12h20" />
+              </svg>
+            </div>
+            <div class="stat-number" data-count="200">0</div>
+            <div class="stat-label">Export Destinations</div>
+          </div>
+          
+          <div class="stat-card animate-on-scroll">
+            <div class="stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <div class="stat-number" data-count="50000">0</div>
+            <div class="stat-label">Job Opportunities</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-gradient"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">About Our Vision</div>
+          <h2 class="section-title">Creating a Manufacturing Hub at the Gateway of Global Trade</h2>
+          <p class="section-description">
+            Our ambitious plan to establish 1,444 factories in Kish Island is designed to transform the regional manufacturing landscape and create a strategic trade corridor.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-container animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=1080&h=720&auto=format&fit=crop" 
+                 alt="Kish Factory Innovation" 
+                 class="about-image">
+            
+            <div class="about-image-highlight">
+              <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=240&h=240&auto=format&fit=crop" 
+                   alt="Kish Technology" 
+                   class="about-image-small">
+            </div>
+          </div>
+
+          <div class="about-content animate-on-scroll">
+            <h3 class="about-content-title">Strategic Advantages</h3>
+            
+            <div class="about-features">
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Geographic Position</h4>
+                  <p class="feature-description">Located just hours from Dubai, Kish Island offers a strategic position for manufacturing and distribution to global markets.</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Economic Freedom</h4>
+                  <p class="feature-description">As a free trade zone, Kish provides tax incentives, streamlined regulations, and investment protections.</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Infrastructure</h4>
+                  <p class="feature-description">State-of-the-art facilities with modern ports, logistics centers, and transportation networks.</p>
+                </div>
+              </div>
+              
+              <div class="feature">
+                <div class="feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Diverse Industries</h4>
+                  <p class="feature-description">Supporting 12 key industry sectors ranging from food & beverage to electronics and textiles.</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#contact" class="link-arrow">
+              Learn more about our plans
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section id="sectors" class="sectors">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Our Industry Sectors</div>
+          <h2 class="section-title">12 Diverse Manufacturing Sectors</h2>
+          <p class="section-description">
+            Our factories span across 12 key industry sectors, creating a comprehensive manufacturing ecosystem that meets global demand.
+          </p>
+        </div>
+
+        <div class="sectors-container">
+          <div class="sectors-tabs" id="sectorTabs">
+            <button class="sector-tab active" data-sector="1">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <span>Food & Beverage</span>
+            </button>
+            <button class="sector-tab" data-sector="2">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 21h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2Z"></path><path d="M12 16a2 2 0 0 0 0-4 2 2 0 0 0 0 4Z"></path><path d="M12 4v2"></path><path d="M10 4h4"></path>
+                </svg>
+              </div>
+              <span>Personal Care</span>
+            </button>
+            <button class="sector-tab" data-sector="3">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <span>Home Care</span>
+            </button>
+            <button class="sector-tab" data-sector="4">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 2H8a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z"></path><path d="M10 10h4"></path><path d="M12 8v4"></path>
+                </svg>
+              </div>
+              <span>Health & Wellness</span>
+            </button>
+            <button class="sector-tab" data-sector="5">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 12h.01"></path><path d="M15 12h.01"></path><path d="M10 16c.5.3 1.1.5 2 .5s1.5-.2 2-.5"></path><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"></path>
+                </svg>
+              </div>
+              <span>Mother & Baby</span>
+            </button>
+            <button class="sector-tab" data-sector="6">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="12" r="1"></circle><circle cx="15" cy="12" r="1"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M2.2 8.9c-.5 1.6-.7 3.3-.7 5.1 0 2.5.7 4.9 1.9 7 .2.4.6.6 1 .6h15.2c.4 0 .8-.2 1-.6 1.2-2.1 1.9-4.5 1.9-7 0-5.3-3.1-10.2-8-12.8-4.9 2.6-8 7.6-8 12.8 0 .7 0 1.4.1 2.1"></path>
+                </svg>
+              </div>
+              <span>Beauty & Cosmetics</span>
+            </button>
+            <button class="sector-tab" data-sector="7">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6.5 14.5A6.5 6.5 0 0 0 13 21a6.5 6.5 0 0 0 6.5-6.5 6.5 6.5 0 0 0 .13-1.32A7 7 0 0 0 15.5 8H15a7 7 0 0 0-6.72 5"></path><path d="M16 8V3"></path><path d="M8 9V4"></path><line x1="10" y1="13" x2="8" y2="13"></line><line x1="16" y1="13" x2="14" y2="13"></line>
+                </svg>
+              </div>
+              <span>Textiles & Fashion</span>
+            </button>
+            <button class="sector-tab" data-sector="8">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21 7-9-5-9 5v10l9 5 9-5V7Z"></path><path d="m3 7 9 5 9-5"></path><path d="M12 22V12"></path>
+                </svg>
+              </div>
+              <span>Household Essentials</span>
+            </button>
+            <button class="sector-tab" data-sector="9">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+              </div>
+              <span>Stationery & Office</span>
+            </button>
+            <button class="sector-tab" data-sector="10">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="2" y1="10" x2="4" y2="10"></line><line x1="20" y1="10" x2="22" y2="10"></line><line x1="12" y1="14" x2="12" y2="16"></line>
+                </svg>
+              </div>
+              <span>Electronics</span>
+            </button>
+            <button class="sector-tab" data-sector="11">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M5 17h-2v-6l2 -5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5"></path>
+                </svg>
+              </div>
+              <span>Automotive</span>
+            </button>
+            <button class="sector-tab" data-sector="12">
+              <div class="sector-tab-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"></path><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"></path><path d="M8 14v.5"></path><path d="M16 14v.5"></path><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"></path><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306"></path>
+                </svg>
+              </div>
+              <span>Pet Care</span>
+            </button>
+          </div>
+
+          <div class="sector-content-container">
+            <div class="sector-content active" data-sector="1">
+              <div class="sector-header">
+                <div class="sector-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line>
+                  </svg>
+                </div>
+                <h3 class="sector-title">Food & Beverage</h3>
+              </div>
+              
+              <p class="sector-description">Manufacturing facilities for packaged foods, beverages, dairy products, and specialty foods.</p>
+              
+              <div class="sector-items">
+                <h4 class="sector-items-title">Products & Categories</h4>
+                <div class="sector-items-grid">
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Packaged foods & snacks</span>
+                  </div>
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Dairy products</span>
+                  </div>
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Bottled water & beverages</span>
+                  </div>
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Baby food & nutrition</span>
+                  </div>
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Organic & health foods</span>
+                  </div>
+                  <div class="sector-item">
+                    <div class="sector-item-dot"></div>
+                    <span>Frozen & ready-to-eat meals</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="sector-footer">
+                <a href="#contact" class="link-arrow">
+                  Learn more about food & beverage
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional sector content will be generated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">World-Class Facilities</div>
+          <h2 class="section-title">State-of-the-Art Manufacturing Ecosystem</h2>
+          <p class="section-description">
+            Our facilities combine cutting-edge technology with strategic infrastructure to create an ideal manufacturing environment.
+          </p>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facilities-image-container animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=1080&h=720&auto=format&fit=crop" 
+                 alt="Kish Factory Facilities" 
+                 class="facilities-image">
+            
+            <div class="facility-card card-bottom animate-float">
+              <div class="facility-card-content">
+                <div class="facility-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="facility-card-title">Strategic Location</div>
+                  <div class="facility-card-subtitle">3 hours from Dubai</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="facility-card card-top animate-float delay-1">
+              <div class="facility-card-content">
+                <div class="facility-card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h16a2 2 0 0 1 1.2.4"></path><path d="M2 10h20"></path><path d="M12 14h4"></path><path d="M12 18h4"></path><path d="M12 10V2H8v8"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="facility-card-title">Free Trade Zone</div>
+                  <div class="facility-card-subtitle">Tax incentives</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="facilities-content animate-on-scroll">
+            <h3 class="facilities-title">Integrated Facilities</h3>
+            
+            <p class="facilities-description">
+              Our comprehensive manufacturing ecosystem provides everything businesses need to thrive, from production floors to global distribution networks.
+            </p>
+            
+            <div class="facilities-features">
+              <div class="facility-feature">
+                <div class="facility-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M17.8 20H6.2a2 2 0 0 1-1.8-2.8l4.4-7.2h6.4l4.4 7.2a2 2 0 0 1-1.8 2.8Z"></path>
+                  </svg>
+                </div>
+                <h4 class="facility-feature-title">Modern Factory Units</h4>
+                <p class="facility-feature-description">Purpose-built manufacturing spaces with flexible layouts and advanced utilities.</p>
+              </div>
+              
+              <div class="facility-feature">
+                <div class="facility-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 17h-4V8l-2-4H2v13h4"></path><path d="M16 17H8"></path><circle cx="5" cy="17" r="2"></circle><circle cx="19" cy="17" r="2"></circle>
+                  </svg>
+                </div>
+                <h4 class="facility-feature-title">Logistics Hub</h4>
+                <p class="facility-feature-description">Integrated shipping and distribution center with direct access to major shipping routes.</p>
+              </div>
+              
+              <div class="facility-feature">
+                <div class="facility-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 2v8L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45L14 10V2"></path><path d="M8.5 2h7"></path><path d="M7 16h10"></path>
+                  </svg>
+                </div>
+                <h4 class="facility-feature-title">Research & Development</h4>
+                <p class="facility-feature-description">Collaborative innovation spaces equipped with testing labs and prototyping facilities.</p>
+              </div>
+              
+              <div class="facility-feature">
+                <div class="facility-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16.5 9.4 7.55 4.24"></path><polyline points="21 16 21 8 12 4 3 8 3 16 12 20 21 16"></polyline><polyline points="3.29 7 12 11 20.71 7"></polyline><line x1="12" y1="11" x2="12" y2="20"></line>
+                  </svg>
+                </div>
+                <h4 class="facility-feature-title">Smart Infrastructure</h4>
+                <p class="facility-feature-description">IoT-enabled facilities with automated systems for efficient resource management.</p>
+              </div>
+            </div>
+            
+            <a href="#contact" class="btn btn-primary mt-4">
+              Schedule a tour
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Connect With Us</div>
+          <h2 class="section-title">Ready to Join Kish Factory Portal?</h2>
+          <p class="section-description">
+            Get in touch with our team to explore partnership opportunities and learn more about establishing your manufacturing presence in Kish Island.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-sidebar">
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <h3 class="contact-card-title">Contact Information</h3>
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>+98 764 445 5678</span>
+                </div>
+                <div class="contact-info-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>contact@kishfactoryportal.com</span>
+                </div>
+                <div class="contact-info-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    Kish Factory Portal Headquarters,<br />
+                    Kish Island Free Zone,<br />
+                    Hormozgan Province, Iran
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="m2 12 4.586-4.586a2 2 0 0 1 2.828 0L16 14"></path><path d="m8 14 2.586 2.586a2 2 0 0 0 2.828 0L20 10"></path>
+                </svg>
+              </div>
+              <h3 class="contact-card-title">Global Shipping</h3>
+              <p class="contact-card-description">
+                Our strategic location enables efficient shipping to global markets through Dubai's world-class logistics network.
+              </p>
+              <div class="contact-badges">
+                <div class="badge-sm">3-Hour Shipping to Dubai</div>
+                <div class="badge-sm">Global Access</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container animate-on-scroll">
+            <form id="contactForm" class="contact-form">
+              <h3 class="contact-form-title">Send Us a Message</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="company">Company Name</label>
+                  <input type="text" id="company" name="company" placeholder="Your Company Ltd.">
+                </div>
+                
+                <div class="form-group">
+                  <label for="sector">Industry Sector <span class="required">*</span></label>
+                  <select id="sector" name="sector" required>
+                    <option value="">Select a sector</option>
+                    <option value="Food & Beverage">Food & Beverage</option>
+                    <option value="Personal Care">Personal Care</option>
+                    <option value="Home Care">Home Care</option>
+                    <option value="Health & Wellness">Health & Wellness</option>
+                    <option value="Mother & Baby">Mother & Baby</option>
+                    <option value="Beauty & Cosmetics">Beauty & Cosmetics</option>
+                    <option value="Textiles & Fashion">Textiles & Fashion</option>
+                    <option value="Household Essentials">Household Essentials</option>
+                    <option value="Stationery & Office">Stationery & Office</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Pet Care">Pet Care</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your business needs and how we can help..." required></textarea>
+              </div>
+              
+              <button type="submit" id="submitButton" class="btn btn-primary btn-block">Send Message</button>
+              
+              <div id="formSuccess" class="form-success hidden">
+                <div class="success-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <h3 class="success-title">Thank You!</h3>
+                <p class="success-message">
+                  Your message has been successfully sent. Our team will get back to you shortly to discuss your inquiries about the Kish Factory Portal.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo-link">
+              <div class="logo-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 22h20M2 11h20M2 17h20M2 7h20M17 3v18M7 3v18" />
+                </svg>
+              </div>
+              <span class="logo-text">Kish Factory Portal</span>
+            </a>
+            <p class="footer-description">
+              Building a manufacturing ecosystem that connects Kish Island to global markets through Dubai's strategic trade hub.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#sectors">Sectors</a></li>
+              <li><a href="#facilities">Facilities</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">News & Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-title">Industry Sectors</h4>
+            <ul class="footer-menu">
+              <li><a href="#sectors">Food & Beverage</a></li>
+              <li><a href="#sectors">Personal Care</a></li>
+              <li><a href="#sectors">Home Care</a></li>
+              <li><a href="#sectors">Health & Wellness</a></li>
+              <li><a href="#sectors">Textiles & Fashion</a></li>
+              <li><a href="#sectors">Electronics</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4 class="footer-title">Contact</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>
+                  Kish Island Free Zone,<br />
+                  Hormozgan Province, Iran
+                </span>
+              </li>
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+98 764 445 5678</span>
+              </li>
+              <li class="footer-contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>contact@kishfactoryportal.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            © <span id="currentYear">2023</span> Kish Factory Portal. All rights reserved.
+          </p>
+
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <span>•</span>
+            <a href="#">Terms of Service</a>
+            <span>•</span>
+            <a href="#">Cookies Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <button id="backToTop" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
